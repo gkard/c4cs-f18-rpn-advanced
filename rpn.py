@@ -14,7 +14,7 @@ def calculate(arg):
             if token == '+':
                 result = val1 + val2
             elif token == '-':
-                result = val1 = val2
+                result = val1 - val2
 
             stack.append(result)
 
@@ -23,7 +23,8 @@ def calculate(arg):
 
 def main():
     while True:
-        calculate(input('rpn calc> '))
+        result = calculate(input('rpn calc> '))
+        print(result)
 
 if __name__ == '__main__':
     main()
