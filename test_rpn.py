@@ -16,11 +16,11 @@ class TestBasics(unittest.TestCase):
         with self.assertRaises(ValueError):
             result = rpn.calculate('1 2 3 +')
 
-#    def test_exp(self):
-#        result = rpn.calculate('2 3 ^')
-#        self.assertEqual(8, result)
-#        result = rpn.calculate('10 4 ^')
-#        self.assertEqual(10000, result)
+    def test_exp(self):
+        result = rpn.calculate('2 3 ^')
+        self.assertEqual(8, result)
+        result = rpn.calculate('10 4 ^')
+        self.assertEqual(10000, result)
 
 
 
