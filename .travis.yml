@@ -8,7 +8,8 @@ install:
   - pip install coveralls
 
 script: 
-  - pytest make test
+  - pytest -- cov
+  - make test
 
 after_success:
   - coveralls
