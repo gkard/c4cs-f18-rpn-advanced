@@ -9,7 +9,7 @@ install:
 
 script: 
   - pytest --cov
-  - make test
+
 
 after_success:
   - coveralls
