@@ -8,8 +8,7 @@ install:
   - pip install coveralls
 
 script: 
-  - pytest --cov=rpn.py
-  - pytest --cov=test_rpn.py
+  - pytest --cov test_rpn.py
 
 after_success:
   - coveralls 
