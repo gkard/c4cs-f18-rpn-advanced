@@ -11,4 +11,4 @@ script:
   - pytest --cov
 
 after_success:
-  - coveralls -e /
+  - coveralls -e /home
