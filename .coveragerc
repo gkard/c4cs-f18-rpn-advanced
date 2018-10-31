@@ -1,2 +1,1 @@
 [run]
-include = rpn.py test_rpn.py
