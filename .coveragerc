@@ -1,2 +1,2 @@
 [run]
-omit = /home/*
+include = rpn.py test_rpn.py
