@@ -26,8 +26,6 @@ class TestBasics(unittest.TestCase):
         result = rpn.calculate('4 5 *')
         self.assertEqual(20, result)
 
-    def test_quit(self):
-        rpn.calculate('q')
 
 
 
