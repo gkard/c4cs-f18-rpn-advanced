@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import math
+from colored import fg, bg, attr
 
 def calculate(arg):
     stack = [] 
@@ -7,6 +8,8 @@ def calculate(arg):
     tokens = arg.split()
 
     for token in tokens:
+        if token == 'q':
+            exit(0)
         try:
             stack.append(int(token))
         except ValueError:
@@ -30,10 +33,23 @@ def calculate(arg):
 
 
 def main():
+    print('Type q <enter> at any time to quit')
     while True:
-        try:
+        try:            
+            color = input('Type: red green yellow or blue: ')
+            colorCode = 0
+            if color == 'q':
+                exit(0)
+            elif color == 'red':
+                colorCode = 1
+            elif color == 'green':
+                  colorCode = 2
+            elif color == 'yellow':
+                  colorCode = 3
+            elif color == 'blue':
+                  colorCode = 4
             result = calculate(input('rpn calc> '))
-            print(result)
+            print ('%s %d %s' % (fg(colorCode), result, attr(0)))
         except ValueError:
             pass
 

@@ -1,0 +1,2 @@
+[run]
+omit = /home/travis/virtualenv/python3.5.6/lib/python3.5/site-packages/_pytest/_argcomplete.py 
