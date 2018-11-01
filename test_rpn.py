@@ -23,7 +23,7 @@ class TestBasics(unittest.TestCase):
         self.assertEqual(10000, result)
 
     def test_multiply(self):
-        result - rpn.calculate('4 5 *')
+        result = rpn.calculate('4 5 *')
         self.assertEqual(20, result)
 
 
