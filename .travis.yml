@@ -6,6 +6,7 @@ install:
   - pip install pytest
   - pip install pytest-cov
   - pip install coveralls
+  - pip install colored --upgrade
 
 script: 
   - py.test --cov
